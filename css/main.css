@@ -19,13 +19,17 @@ body {
 }
 
 .img {
+  border-radius: 50%; 
   width: 193px;
   height: 193px;
   background: url("../images/v1_11.png");
   opacity: 1;
+  object-fit: contain;
   position: absolute;
-  top: 316px;
-  left: 864px;
+  /* top: 316px;
+  left: 864px; */
+  left: 45%;
+  top: 35%;
 }
 
 .welc {
