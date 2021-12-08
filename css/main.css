@@ -15,14 +15,11 @@ h3 {
   color: white;
 }
 
-.img {
+img {
   border-radius: 50%;
   object-fit: scale-down;
-  position: absolute;
   --width: 175px;
   height: 175px;
-  top: 20%;
-  left: calc(50% - var(--width) / 2);
 }
 
 .welc {
@@ -34,7 +31,15 @@ h3 {
   top: 10%;
 }
 
-.container {
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid silver;
+} 
+
+.container-2 {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -42,11 +47,20 @@ h3 {
   justify-content: center;
 }
 
-.container div {
+.container-2 div {
   padding: 60px;
-  border: 1px tomato;
+  border: 1px solid silver;
+}
+
+.container-1 div, .container-2 div {
+  padding: 10px;
+  border: 1px solid silver;
 }
 
 .box {
   flex-basis: 7%;
+}
+
+. img {
+
 }
