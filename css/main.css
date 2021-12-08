@@ -2,12 +2,16 @@ body{
   background-color: black; /* Цвет фона веб-страницы */
 }
 
-A:hover {
+a:hover {
   text-decoration: underline;
   color: gray;
 }
 
-A {
+a {
+  color: white;
+}
+
+h3 {
   color: white;
 }
 
@@ -30,10 +34,19 @@ A {
   top: 10%;
 }
 
-.link {
-  color: whitesmoke;
-  justify-content: center;
-  position: absolute;
+.container {
+  display: flex;
+  flex-direction: row;
   text-align: center;
-  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.container div {
+  padding: 60px;
+  border: 1px tomato;
+}
+
+.box {
+  flex-basis: 7%;
 }
