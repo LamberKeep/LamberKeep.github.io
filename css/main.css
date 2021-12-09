@@ -1,53 +1,46 @@
-body{
-  background-color: black; /* Цвет фона веб-страницы */
+html {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  margin: 0 auto;
+  top: auto;
+  left: auto;
+  height: 99.8%;
+  width: auto;
+
+  border: 1px solid silver;
 }
 
+body {
+  background-color: black;
+}
+
+a,p,h3 {
+  color: white;
+}
+
+a:focus,
 a:hover {
   text-decoration: underline;
   color: gray;
 }
 
-a {
-  color: white;
-}
-
-h3 {
-  color: white;
-}
-
-img {
-  border-radius: 50%;
-  object-fit: scale-down;
-  --width: 175px;
-  height: 175px;
-}
-
-.container-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  border: 1px solid silver;
-} 
-
-.container-2 {
+.links {
   display: flex;
   flex-direction: row;
+
+  align-items: top;
+  justify-content: space-between;
   text-align: center;
-  align-items: flex-start;
-  justify-content: center;
-}
 
-.container-2 div {
-  padding: 60px;
-  border: 1px solid silver;
-}
-
-.container-1 div, .container-2 div {
-  padding: 10px;
-  border: 1px solid silver;
+  margin-top: 15px;
+  /* border: 1px solid silver; */
 }
 
 .box {
-  flex-basis: 7%;
+  flex-basis: 10%;
 }
