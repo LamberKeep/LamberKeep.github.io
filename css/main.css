@@ -1,18 +1,13 @@
 html {
   display: flex;
-  flex-direction: column;
 
   justify-content: space-around;
   align-items: center;
-  text-align: center;
+  text-align: center; 
+  
+  height: 100%;
 
-  margin: 0 auto;
-  top: auto;
-  left: auto;
-  height: 99.8%;
-  width: auto;
-
-  border: 1px solid silver;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -20,27 +15,37 @@ body {
 }
 
 a,p,h3 {
+  text-decoration: none;
   color: white;
 }
 
 a:focus,
 a:hover {
   text-decoration: underline;
-  color: gray;
+  color: gray;  
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 50px;
 }
 
 .links {
   display: flex;
-  flex-direction: row;
-
-  align-items: top;
-  justify-content: space-between;
   text-align: center;
-
-  margin-top: 15px;
-  /* border: 1px solid silver; */
+  
+  flex-grow: 2;
 }
 
 .box {
-  flex-basis: 10%;
+  margin-right: 15px;
+  margin-left: 15px;
 }
