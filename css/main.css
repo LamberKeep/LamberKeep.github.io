@@ -1,17 +1,10 @@
-html {
-  display: flex;
-
-  justify-content: space-around;
-  align-items: center;
-  text-align: center; 
-  
+body {
+  margin: 0;
+  padding: 0;
   height: 100%;
 
-  font-family: 'Roboto', sans-serif;
-}
-
-body {
   background-color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 a,p,h3 {
@@ -29,13 +22,23 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  text-align: center;
+
+  justify-content: center;
+
+  min-height: 100%;
+
+  border: 2px solid red;
 }
 
 .texts {
   display: flex;
   flex-direction: column;
 
+  text-align: center;
+
   margin-right: 50px;
+  border: 2px solid green;
 }
 
 .links {
@@ -43,9 +46,14 @@ a:hover {
   text-align: center;
   
   flex-grow: 2;
+  border: 2px solid blue;
 }
 
 .box {
   margin-right: 15px;
   margin-left: 15px;
+}
+
+:root {
+  --imgsize: 290px;
 }
