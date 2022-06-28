@@ -36,6 +36,11 @@ a:hover {
   align-items: center;
 
   flex-grow: 1;
+
+  animation-name: fadeIn;
+  animation-duration: 3000ms;
+  animation-iteration-count: once;
+  animation-direction: alternate;
 }
 
 .content-footer {
@@ -73,4 +78,14 @@ a:hover {
   --clrback: #000;
   --clrtxt: #fff;
   --clrtxthov: #808080;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
