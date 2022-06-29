@@ -7,28 +7,31 @@ body {
 
 body {
   background-color: var(--clrback);
-}
-
-a,p,h3 {
-  text-decoration: none;
+  
   color: var(--clrtxt);
+  font-family: 'Roboto', sans-serif;
+  
+  animation-name: fadeIn;
+  animation-duration: 3000ms;
+  animation-iteration-count: once;
+  animation-direction: alternate;
 }
 
-a:focus,
-a:hover {
-  text-decoration: underline;
-  color: var(--clrtxthov);  
+a, h3 {
+  text-decoration: none;
 }
+
+/* WRAPPER */
 
 .wrapper {
   display: flex;
-
   flex-direction: column;
-
   min-height: 100%;
 }
 
-.content-center {
+/* CENTER */
+
+.center {
   display: flex;
 
   flex-direction: row;
@@ -36,49 +39,74 @@ a:hover {
   align-items: center;
 
   flex-grow: 1;
-
-  animation-name: fadeIn;
-  animation-duration: 3000ms;
-  animation-iteration-count: once;
-  animation-direction: alternate;
 }
 
-.content-footer {
-  display: flex;
-
-  justify-content: end;
-}
-
-.footer-icon {
-  margin-right: 6px;
-}
-
-.text {
+.center-content {
   display: flex;
 
   flex-direction: column;
   text-align: center;
 
   margin-right: 30px;
-
-  font-family: 'Roboto', sans-serif;
 }
 
-.links {
+.center-links {
   display: flex;
 
   text-align: center;
 }
 
-.box {
-  margin: 0 15px 0 15px;
+.center-box {
+  margin: 10px;
+  padding: 10px;
+
+  line-height: 30px;
 }
+
+.center-link {
+  color: var(--clrtxt);
+}
+
+.center-link:hover,
+.center-link:focus {
+  color: var(--clrtxthov);
+  text-decoration: underline;
+}
+
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+
+  align-items: center;
+  
+  justify-content: end;
+
+  gap: 10px;
+
+  padding: 5px 10px;
+}
+
+.footer-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+  filter: brightness(0.3);
+}
+
+/* ROOT */
 
 :root {
   --clrback: #000;
   --clrtxt: #fff;
   --clrtxthov: #808080;
 }
+
+/* ANIMATIONS */
 
 @keyframes fadeIn {
   0% {
