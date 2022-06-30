@@ -73,6 +73,14 @@ a, h3 {
   text-decoration: underline;
 }
 
+.center-image {
+  border: 3px solid var(--clrtxt);
+}
+
+.center-image:hover,
+.center-image:focus {
+  border: 3px solid var(--clrtxthov);
+}
 
 /* FOOTER */
 
