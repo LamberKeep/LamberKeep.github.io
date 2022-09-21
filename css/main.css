@@ -1,5 +1,6 @@
 html,
 body {
+  font-size: 16px;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@ body {
   background-color: var(--clrback);
   
   color: var(--clrtxt);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Prompt';
   
   animation-name: fadeIn;
   animation-duration: 3000ms;
@@ -41,6 +42,50 @@ a, h3 {
   flex-grow: 1;
 }
 
+.center-grid {
+  display: grid;
+
+  width: auto;
+  height: auto;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  
+  grid-column-gap: 12px;
+  
+  grid-row-gap: 12px;
+
+  margin-right: 16px;
+
+  align-items: stretch;
+}
+
+.center-grid-caption {
+  text-align: center;
+  grid-area: 1 / 1 / 1 / 5; 
+}
+
+.center-grid-column {
+  text-align: center;
+}
+
+.center-grid-column-1 {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.center-grid-column-2 {
+  grid-area: 2 / 2 / 4 / 3;
+}
+
+.center-grid-column-3 {
+  grid-area: 2 / 3 / 4 / 4;
+}
+
+.center-grid-column-4 {
+  grid-area: 2 / 4 / 4 / 5;
+}
+
+/*
 .center-content {
   display: flex;
 
@@ -62,6 +107,7 @@ a, h3 {
 
   line-height: 30px;
 }
+*/
 
 .center-link {
   color: var(--clrtxt);
@@ -112,6 +158,12 @@ a, h3 {
   --clrback: #000;
   --clrtxt: #fff;
   --clrtxthov: #808080;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 900px) {
+  body { font-size: 10px; }
 }
 
 /* ANIMATIONS */
